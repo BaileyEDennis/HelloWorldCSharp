@@ -25,6 +25,17 @@ namespace HelloWorld
                 Console.WriteLine("\nHowdy y'all!!\n");
             }
 
+            string sentence;
+            string myColor;
+
+            Console.WriteLine("Please enter your Name:");
+            sentence = Console.ReadLine();
+            Console.WriteLine($"Hello, {sentence}, nice to meet you!");
+
+            Console.WriteLine($"What is your favorite color, {sentence}?");
+            myColor = Console.ReadLine();
+            Console.WriteLine($"Would you like to have a {myColor} whale?");
+
             var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan" };
 
             foreach(var animal in animals)
